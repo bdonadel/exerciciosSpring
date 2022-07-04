@@ -39,6 +39,7 @@ public class NumerosRomanos {
         centenas.put(7,"DCC");
         centenas.put(8,"DCCC");
         centenas.put(9,"CM");
+        unidadesMilhar.put(0, "");
         unidadesMilhar.put(1, "M");
         unidadesMilhar.put(2, "MM");
         unidadesMilhar.put(3, "MMM");

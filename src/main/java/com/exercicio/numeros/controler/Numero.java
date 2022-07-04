@@ -13,9 +13,11 @@ public class Numero {
         int unidade = numero % 10;
         int dezena = ((numero - unidade) % 100) / 10;
         int centena = ((numero - dezena - unidade) % 1000) / 100;
-        System.out.println("numero = " + centena + dezena + unidade);
+        int milhar = ((numero - centena - dezena - unidade) % 10000) / 1000;
+        System.out.println("numero = " + milhar + centena + dezena + unidade);
 
-        return numeroReferencia.getCentenas().get(centena) +
+        return numeroReferencia.getUnidadesMilhar().get(milhar) +
+                numeroReferencia.getCentenas().get(centena) +
                 numeroReferencia.getDezenas().get(dezena) +
                 numeroReferencia.getUnidades().get(unidade);
     }
